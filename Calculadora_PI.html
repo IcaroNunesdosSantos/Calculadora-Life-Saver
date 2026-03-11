@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora Financeira - Life Saver</h1>
+    <div class="pai">
+        <div class="calc">
+        <h1>Calculadora Financeira - Life Saver</h1>
 
-    Quantidade de leitos de UTI: <input type="text" id="ipt_leitos"> <br><br>
+        Quantidade de leitos de UTI: <br>
+        <input type="text" id="ipt_leitos"> <br><br>
 
-    Custo Unitario da pulseira: <input type="text" id="ipt_custoPulseira"><br><br>
+        Custo Unitario da pulseira: <br>
+        <input type="text" id="ipt_custoPulseira"><br><br>
 
-    
+        Custo mensal do sistema: <br>
+        <input type="text" id="ipt_custoSistema"> <br><br>
 
-    Custo mensal do sistema: <input type="text" id="ipt_custoSistema"> <br><br>
+        Custo médio de uma complicação evitavel <br>
+        (Sepse, Hipotermia grave, Eventos cardiovasculares induzidos por febre, Acidente Vascular Cerebral (AVC)): <br>
+        <input type="text" id="ipt_custoCompli"> <br><br>
 
-    Custo médio de uma complicação evitavel <br>
-    (Sepse, Hipotermia grave, Eventos cardiovasculares induzidos por febre, Acidente Vascular Cerebral (AVC)): 
-    <input type="text" id="ipt_custoCompli"> <br><br>
+        Quantidade média de complicações por mês(Estimativa): <br>
+        <input type="text" id="ipt_qtdCompliMes"><br><br>
 
-    Quantidade média de complicações por mês(Estimativa): <input type="text" id="ipt_qtdCompliMes"><br><br>
-
-    <button onclick="calcular()">Calcular</button> <br><br> 
-
-    <div id="div_exibir"></div>
+        <button onclick="calcular()">Calcular</button> <br><br> 
+        </div>
+        <div id="div_exibir"></div>
+    </div>
 </body>
 </html>
 
@@ -55,10 +61,10 @@
                                     Tempo de Retorno: ${tempoDias} Dias.
                                     
                                     <h3> Legendas: </h3>
-                                        <b style="color: blue;">Investimento Inicial: </b> Leitos multiplicado pelo valor da pulseira. <br>
-                                        <b style="color: blue;">Economia Mensal: </b> Quanto o hospital economizou com complicações evitadas. <br>
-                                        <b style="color: blue;">Lucro Mensal: </b> Lucro Líquido do hospital. <br>
-                                        <b style="color: blue;">Tempo de Retorno: </b> Tempo aproximado necessário para recuperar o investimento inicial.`
+                                        <b style="color: #1b4d6b;">Investimento Inicial: </b> Leitos multiplicado pelo valor da pulseira. <br>
+                                        <b style="color: #1b4d6b;;">Economia Mensal: </b> Quanto o hospital economizou com complicações evitadas. <br>
+                                        <b style="color: #1b4d6b;;">Lucro Mensal: </b> Lucro Líquido do hospital. <br>
+                                        <b style="color: #1b4d6b;;">Tempo de Retorno: </b> Tempo aproximado necessário para recuperar o investimento inicial.`
             }
         
     }
